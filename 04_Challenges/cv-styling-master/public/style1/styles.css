@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+  }
+header div{
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    margin-left: -550px;
+}
+hgroup{
+    color: red;
+}
+
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 18px;
+        left: 1000px;
+        font-size: 18px;
+       
+    
+    }
+    dl {
+        width: 200%;
+        overflow: hidden;
+        background: black;
+        padding: 0;
+        margin: 0;
+        
+      }
+      dt {
+        float: left;
+        width: 50%;
+        color: white;
+        background: orangered;
+        padding: 0;
+        margin: 0
+      }
+      dd {
+        float: left;
+        width: 50%;
+        padding: 0;
+        margin: 0;
+        
+      }
+    dd a {
+        text-decoration: none;
+        color: orangered;
+        
+    }
+
+    .content {
+        display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  grid-auto-rows: 100px;
+  grid-template-areas:
+    "a a a a b b b b"
+    "a a a a b b b b"
+    "c c c c d d d d"
+    "c c c c d d d d"
+    "e e e e f f f f"
+    "e e e e f f f f"
+    "g g g g h h h h"
+    "g g g g h h h h";
+    width:60%;
+    margin-left: 20%;
+      }
+      section h3{
+          
+          border-bottom: 1px solid gray;
+      }
+
+      #about {
+        grid-area: a;
+        
+      }
+
+      #competencies{
+        grid-area: b;
+        
+  
+      }
+
+      #experiences{
+        grid-area: c;
+        margin-top: 150px;
+      }
+
+      #education{
+        grid-area: d;
+        margin-top: 150px;
+      }
+
+      #hobbies{
+        margin-top: 250px;
+        grid-area:g;
+      }
+      
+      #contact h3{
+          display: none;
+      }
+
+     
+         
+          
+      
+      .skills{
+        width: 100%;
+    }
+      .skill{
+        background-color: lightgrey;
+          margin-top:10px;
+          width: 100%;
+          padding: 3px;
+      }
+
+      [data-skill="5"] span{
+        width:50%;
+       background-color: red;
+       display: inline-block;
+       padding: 3px;
+    }
+
+    [data-skill="3"] span{
+        width:30%;
+       background-color: red;
+       display: inline-block;
+       padding: 3px;
+    }
+
+    [data-skill="1"] span{
+        width:10%;
+       background-color: red;
+       display: inline-block;
+       padding: 3px;
+    }
+    [data-skill="9"] span{
+        width:90%;
+       background-color: red;
+       display: inline-block;
+       padding: 3px;
+    }
+    [data-skill="7"] span{
+        width:70%;
+       background-color: red;
+       display: inline-block;
+       padding: 3px;
+    }
+
+    h3{
+        font-weight: bold;
+        font-size: 2em;
+    }
+    h3::before{
+        content: "";
+        display: inline-block;
+        height: 25px;
+        width:25px;
+        background-color: red;
+        border-radius: 50%;
+       
+    }
+    .skills-primary::before{
+        content: "Main";
+        font-weight: bold;
+        font-size: 20px;
+
+    }
+    
+    .skills-secondary::before{
+        content: "Other";
+        font-weight: bold;
+        font-size: 20px;
+    }
+    h4{
+        color: red;
+    }
+
+    .experience-date, .experience-location{
+        color:gray;
+    }
+    p{
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight:normal;
+    }
+
+    
