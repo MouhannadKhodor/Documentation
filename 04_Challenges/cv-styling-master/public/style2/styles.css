@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+div{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%; 
+}
+
+hgroup h2{
+    display:none;
+    
+}
+hgroup h1{
+    border-bottom: 1px solid black;
+    
+}
+
+img{
+    float: right;
+    margin-top: -60px;
+    -webkit-transform:rotate(-20deg);
+}
+#about h3{
+    display:none;
+}
+#about p{
+    width:70%;
+    text-align: justify;
+    text-justify: inter-word;
+    color:lightslategray;
+    font-style: italic;
+    font-family:  Arial;
+    font-size: small;
+    
+}
+
+
+
+.skills, .experience{
+   
+    border-left: 1px solid black;
+    
+}
+
+
+#competencies{
+    margin-top: 100px;
+}
+.experience{
+    
+}
